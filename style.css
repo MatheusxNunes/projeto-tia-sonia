@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lobster&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #3B929C;
+        width: 100%;
+        height: 110px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+        align-items: center;
+        list-style: none;
+    }
+
+    a{
+        font-family: "Libre Baskerville" serif;    
+        font-size: 20px;
+        text-decoration: none;
+        border: solid 2px #ffff;
+        padding: 5px;
+        border-radius:0 20px;
+    }
+
+    a:hover{
+        background-color:#ffff;
+
+    }
+
+    .icones{
+        padding: 10px 35px;
+    }
+
+    .icone-home{
+        padding: 10px 40px;
+    }
+
