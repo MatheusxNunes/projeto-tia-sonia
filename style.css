@@ -1,222 +1,328 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lobster&display=swap');
 
-    :root{
-         --cor-principal: #a4a9da;
-         --cor-secundaria: #ffffff;
-         --roxo-background: #ba99c0;
-         --back-color: #d1a8d6;
-         --largura-principal: 1600px
-        
-    }
+:root {
+   --cor-principal: #a4a9da;
+   --cor-secundaria: #ffffff;
+   --roxo-background: #ba99c0;
+   --back-color: #d1a8d6;
+   --largura-principal: 1600px;
+   --largura-celular: 430px
+}
 
-    *{
-       margin: 0;
-       padding: 0;
-       font-family: "Libre Baskerville", serif;   
-    }
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Libre Baskerville", serif;
+}
 
-    header{
-       background-color: var(--back-color);
-       width: 100%;
-       height: 110px;
-       position: fixed;
-       top: 0px;
-    }
+header {
+   background-color: var(--back-color);
+   width: 100%;
+   height: 110px;
+   position: fixed;
+   top: 0px;
+}
 
-    nav{
-       display: flex;
-       justify-content: space-between;
-       height: 110px;
-       width: 90%;
-       margin: auto;
-    }
+.area-navegação {
+   display: flex;
+   justify-content: space-between;
+   height: 110px;
+   width: 90%;
+   margin: auto;
+}
 
-    ul{
-       display: flex;
-       gap: 50px;
-       align-items: center;
-       list-style: none;
-    }
+ul {
+   display: flex;
+   gap: 50px;
+   align-items: center;
+   list-style: none;
+}
 
-     nav ul li a{
-       font-size: 20px;
-       text-decoration: none;
-       border: solid 2px var(--cor-secundaria);
-       padding: 5px;
-       border-radius:0 20px;
-    }
+nav ul li a {
+   font-size: 20px;
+   text-decoration: none;
+   border: solid 2px var(--cor-secundaria);
+   padding: 5px;
+   border-radius: 0 20px;
+}
 
-      nav ul li a:hover{
-       background-color: var(--roxo-background);
-    }
+nav ul li a:hover {
+   background-color: var(--roxo-background);
+}
 
-    .icones{
-       padding: 10px 35px;
-    }
+.icones {
+   padding: 10px 35px;
+}
 
-    main{
-        margin-top: 110px;
-    }
+main {
+   margin-top: 110px;
+}
 
-    #banner{
-       width: var(--largura-principal);
-    }
+#banner {
+   width: var(--largura-principal);
+}
 
-    #banner__image{
-       width: var(--largura-principal);
-       margin-top: 20px;
-    }
+#banner__image {
+   width: var(--largura-principal);
+   margin-top: 20px;
+}
 
-    .reserva{
-       width: var(--largura-principal);
-       border:2px dashed var(--cor-principal);
-       color: var(--cor-principal);
-       text-align: center;
-       font-size: 15px;
-       padding: 25px;
-    }
+.reserva {
+   width: var(--largura-principal);
+   border: 2px dashed var(--cor-principal);
+   color: var(--cor-principal);
+   text-align: center;
+   font-size: 15px;
+   padding: 25px;
+}
 
-    .area-banner{
-       display:flex;
-       flex-direction:column;
-       align-items: center;
-    }
+.area-banner {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 
-      #reserva__botão{
-         padding: 20px 30px;
-         color: var(--cor-secundaria);
-         font-size: 20px;
-         background-color: var(--cor-principal);
-         border: none;
-         border-radius: 15px;
-         margin-top: 15px;
-         margin-bottom: 20px;
-         cursor: pointer;
-    }
+#reserva__botão {
+   padding: 20px 30px;
+   color: var(--cor-secundaria);
+   font-size: 20px;
+   background-color: var(--cor-principal);
+   border: none;
+   border-radius: 15px;
+   margin-top: 15px;
+   margin-bottom: 20px;
+   cursor: pointer;
+}
 
-      #reserva__botão:hover{
-           background-color: var(--back-color);
-    }
+#reserva__botão:hover {
+   background-color: var(--back-color);
+}
 
 
-      #reserva_titulo{
-       margin-top: 20px;
-    }
+#reserva_titulo {
+   margin-top: 20px;
+}
 
-      .area-sobre{
-         color: var(--cor-principal);
-         display: flex;
-         width: 1400px;
-         margin: auto;
-         margin-top:20px;
-    }
+.area-sobre {
+   color: var(--cor-principal);
+   display: flex;
+   width: 1400px;
+   margin: auto;
+   margin-top: 20px;
+}
 
-      .sobre{
-         color: var(--cor-principal);
-         font-size: 50px;
-         padding: 20px;
-    }
+.sobre {
+   color: var(--cor-principal);
+   font-size: 50px;
+   padding: 20px;
+}
 
-       .sobre__foto{
-         width: 500px;
-         height: 500px;
-         border-radius: 20px;
-    }
+.sobre__foto {
+   width: 500px;
+   height: 500px;
+   border-radius: 20px;
+}
 
-      .sobre__titulo{
-         margin-top: 30px;
-         font-size: 30px;
-    }
+.sobre__titulo {
+   margin-top: 30px;
+   font-size: 30px;
+}
 
-      .sobre__texto{
-       margin-top: 30px;
-       font-size: 20px;
-    }
+.sobre__texto {
+   margin-top: 30px;
+   font-size: 20px;
+}
 
-      .area__busca{
-       width: var(--largura-principal);
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       align-items: center;
-       text-align: center;
-       padding: 20px;
-       max-width: 650px;
-       margin: 0 auto;
-    }
+.area__busca {
+   width: var(--largura-principal);
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 20px;
+   max-width: 650px;
+   margin: 0 auto;
+}
 
-   .busca{
-       width: 764px;
-       height: 40px;
-       border: 2ps solid var(--cor-principal);
-       border-radius: 20px;
-       padding: 5px;
-       display: flex;
-       
-    }
+.busca {
+   width: 764px;
+   height: 40px;
+   border: 2ps solid var(--cor-principal);
+   border-radius: 20px;
+   padding: 5px;
+   display: flex;
 
-   .busca__campo{
-       flex: 1;
-       border: none;
-       font-size: 25px;
-       outline: none;
-       width: 100%;
-       padding: 10px;
-    }
+}
 
-   .busca__botão{
-       font-size: 30px;
-       border: none;
-       color: var(--cor-principal);
-       background: none;
-    }
-    
-   .bordados{
-       text-align : center;
-    }
+.busca__campo {
+   flex: 1;
+   border: none;
+   font-size: 25px;
+   outline: none;
+   width: 100%;
+   padding: 10px;
+}
 
-   .catalogo{
-       margin: 100px auto;
-       width: 1400px;
-       display: flex;
-       flex-wrap: wrap;
-       gap: 50px;
-       justify-content: space-around;
-    }
+.busca__botão {
+   font-size: 30px;
+   border: none;
+   color: var(--cor-principal);
+   background: none;
+}
 
-   .bordados > a >img{
-       width: 400px;
-       border-radius:20px;
-    }
+.bordados {
+   text-align: center;
+}
+
+.catalogo {
+   margin: 100px auto;
+   width: 1400px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 50px;
+   justify-content: space-around;
+}
+
+.bordados>a>img {
+   width: 400px;
+   border-radius: 20px;
+}
+
+.catalogo__titulo {
+   font-size: 50px;
+   margin-bottom: 50px;
+   color: var(--cor-principal);
+   display: flex;
+   flex-direction: column;
+}
+
+.busca {
+   display: flex;
+   width: 754px;
+   height: 40px;
+   border: 3px solid var(--cor-principal);
+   border-radius: 20px;
+   padding: 5px;
+   justify-content: center;
+}
+
+#home {
+   scroll-margin-top: 110px;
+}
+
+footer {
+   background-color: var(--cor-principal);
+   color: var(--cor-secundaria);
+   text-align: center;
+   margin-top: 40px;
+   font-size: 0.9rem;
+}
+
+@media (max-width: 430px) {
+
+ header{
+   width: 430px;
+   height: 80px;
+   position: fixed;
+   top: 0;
+   }
+
+ .area-navegação {
+   width: 430px;
+   height: 80px;
+   display: block;
+   }
+
+ .logo{
+   display: none;
+   }
+
+ ul{
+   gap: 0px;
+   justify-content: center;
+   }
+
+   .icones{
+      font-size: 30px;
+      border: none;
+      padding: 20px;
+   }
+
+   .icones:hover, .icones:focus{
+      background: none;
+      color: none;
+   }
+
+   #banner{
+   width: var(--largura-celular);      
+   }
+
+   #banner__image{
+      width: var(--largura-celular)
+   }
+
+   #reservas{
+      width: 390px;
+   }
+   .reserva{
+      width: var(--largura-celular);
+   }
+
+
+   #reserva__titulo{
+      font-size: 22px;
+   }
+
+   #reserva__botão{
+   padding: 10px 15px ;
+   font-size: 18px;
+   border-radius: 5px;
+   }
+
+   .area-sobre{
+      flex-direction: column;
+      text-align: center;
+      font-size: 15px;
+   }
+
+   .sobre{
+      width: var(--largura-celular);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .sobre__titulo{
+      font-size: 10px;
+      text-align: center;
+   }
+
+   .sobre__texto{
+      font-size: 10px;
+      padding: 20px;
+   }
+
+   .sobre__foto{
+      width: var(--largura-celular);
+      border-radius: 100px;
+      padding: 10px;
+   }
+
+   hr{
+      width: var(--largura-celular);
+   }
+   
+   .area__busca{
+      width: var(--largura-celular);
+   }
 
    .catalogo__titulo{
-       font-size: 50px;
-       margin-bottom: 50px;
-       color: var(--cor-principal);
-       display:flex;
-       flex-direction: column;
-    }
+      font-size: 35px;
+   }
 
-   .busca{
-        display: flex;
-        width: 754px;
-        height: 40px;
-        border: 3px solid var(--cor-principal);
-        border-radius: 20px;
-        padding: 5px;
-        justify-content: center; 
-    }
-
-   #home{
-        scroll-margin-top: 110px;
-    }
-
-   footer{
-      background-color:  var(--cor-principal);
-      color: var(--cor-secundaria);
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9rem;
-    }
-
+   .catalogo{
+      width: var(--largura-celular);
+      gap: 50px;
+   }
+}
