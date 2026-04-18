@@ -117,18 +117,18 @@ main {
    padding: 20px;
 }
 
-.sobre__foto {
+.sobre-foto {
    width: 500px;
    height: 500px;
    border-radius: 20px;
 }
 
-.sobre__titulo {
+.sobre-titulo {
    margin-top: 30px;
    font-size: 25px;
 }
 
-.sobre__texto {
+.sobre-texto {
    margin-top: 30px;
    font-size: 15px;
 }
@@ -225,6 +225,11 @@ footer {
 
 @media (max-width: 430px) {
 
+ .area-sobre {
+      flex-direction: column;
+      width: 100%;
+   }
+ 
  header{
    width:var(--largura-celular);
    height: 10vh;
@@ -296,13 +301,13 @@ footer {
       align-items: center;
    }
 
-   .sobre__titulo{
-      font-size: 20px;
+   .sobre-titulo{
+      font-size: 1.8rem;
       text-align: center;
    }
 
-   .sobre__texto{
-      font-size: 20px;
+   .sobre-texto{
+      font-size: 1rem;
       padding: 10px;
       text-align: center;
    }
