@@ -17,20 +17,20 @@
 
         <section class="area-formulario">
             <form action="#" class="form-cadastro">
-                <div class="area-nome">
 
+                <div class="area-nome formatacao">
                     <div class="primeiro-nome">
                         <label for="nome">nome</label>
                         <input type="text" id="nome" placeholder="digite seu nome">
                     </div>
 
-                    <div class="ultimo-nome">
+                    <div class="ultimo-nome ">
                         <label for="sobrenome">sobrenome</label>
                         <input type="text" id="sobrenome" placeholder="digite sue sobrenome">
                     </div>
                 </div>
 
-                <div class="area-acesso">
+                <div class="area-acesso formatacao">
 
                     <div class="email">
                         <label for="email">email</label>
@@ -41,47 +41,53 @@
                         <label for="senha">senha</label>
                         <input type="password" id="senha" placeholder="••••••" required>
                     </div>
-
-                    <div class="area-contato">
-
-                        <div class="DDD">
-                            <label for="ddd">ddd</label>
-                            <input type="number" max="99" id="ddd" placeholder="ddd" required>
-                        </div>
-
-                        <div class="telefone">
-                            <label for="telefone">telefone</label>
-                            <input type="text" id=" telefone" placeholder="Digite seu telefone" required>
-                        </div>
-                    </div>
-
-                    <div class="area-endereço">
-                        <label for="endereço">endereço</label>
-                        <input type="text" id="endereço" placeholder="Digite seu endereço aqui" required>
-                    </div>
-
-                    <div class="numero">
-                        <label for="numero">Numero</label>
-                        <input type="number" id="numero" placeholder="000">
-                    </div>
-
-                    <div class="cidade">
-                        <label for="cidade">Cidade</label>
-                        <input type="text" id="cidade" placeholder="cidade">
-                    </div>
-
-                    <div class="cep">
-                        <label for="CEP">CEP</label>
-                        <input type="number" id="cep" placeholder="00000-000">
-                    </div>
-
                 </div>
 
-                <div class="area-dados">
+                <div class="area-contato formatacao">
+                    <div class="ddd">
+                        <label for="ddd">ddd</label>
+                        <input type="number" max="99" id="ddd" placeholder="ddd" required>
+                    </div>
+
+                    <div class="telefone">
+                        <label for="telefone">telefone</label>
+                        <input type="text" id=" telefone" placeholder="Digite seu telefone" required>
+                    </div>
+                </div>
+
+
+                <div class="area-endereco formatacao">
+                    <div class="endereco-numero">
+                        <div class="endereco">
+                            <label for="endereço">endereço</label>
+                            <input type="text" id="endereco" placeholder="Digite seu endereço aqui" required>
+                        </div>
+
+                        <div class="numero">
+                            <label for="numero">Numero</label>
+                            <input type="number" id="numero" placeholder="000">
+                        </div>
+                    </div>
+
+                    <div class="cidade-cep">
+                        <div class="cidade">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" placeholder="cidade">
+                        </div>
+
+                        <div class="cep">
+                            <label for="CEP">CEP</label>
+                            <input type="number" id="cep" placeholder="00000-000">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="area-dados formatacao">
                     <div class="data-nascimento">
                         <label for="data de nascimento">Data de nascimento</label>
                         <input type="date" id=" data-nascimento" required>
                     </div>
+
                     <div class="genero">
                         <label for="genero">Gênero</label>
                         <select id="genero" required>
@@ -93,8 +99,8 @@
                         </select>
                     </div>
                 </div>
-
-                <div class="area-botão">
+                
+                <div class="area-botão formatacao">
                     <button type="submit" id="botão-cadasstrar">Cadastrar</button>
                     <a href="#" class="link-login"> Já possui uma conta? Acesse agora</a>
                 </div>
