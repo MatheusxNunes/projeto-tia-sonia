@@ -5,8 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Cadastro</title>
 </head>
+
+<header>
+   <nav class="area-navegação">
+       <div> <img  class="logo" src="imagens-sônia/logo-tia-sonia.png" alt="logo-tia-sonia" width="150px"></div>
+
+         <ul id="icones-topo">
+            <li><a class="icones" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a class="icones" href="#bordados"><i class="fa-solid fa-scissors"></i></a></li>
+            <li><a class="icones" href="#"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a></li>
+            <li><a class="icones" href="cadastro.html"><i class="fa-solid fa-circle-user"></i></a></li>
+        </ul>
+   </nav>
+</header>
 
 <body>
 
@@ -19,12 +33,12 @@
             <form action="#" class="form-cadastro">
 
                 <div class="area-nome formatacao">
-                    <div class="primeiro-nome">
+                    <div class="primeiro-nome titulo-campo">
                         <label for="nome">nome</label>
                         <input type="text" id="nome" placeholder="digite seu nome">
                     </div>
 
-                    <div class="ultimo-nome ">
+                    <div class="ultimo-nome titulo-campo">
                         <label for="sobrenome">sobrenome</label>
                         <input type="text" id="sobrenome" placeholder="digite sue sobrenome">
                     </div>
@@ -32,63 +46,62 @@
 
                 <div class="area-acesso formatacao">
 
-                    <div class="email">
+                    <div class="email titulo-campo">
                         <label for="email">email</label>
                         <input type="email" id="email" placeholder="digite seu email" required>
                     </div>
 
-                    <div class="senha">
+                    <div class="senha titulo-campo">
                         <label for="senha">senha</label>
                         <input type="password" id="senha" placeholder="••••••" required>
                     </div>
                 </div>
 
                 <div class="area-contato formatacao">
-                    <div class="ddd">
+                    <div class="ddd titulo-campo">
                         <label for="ddd">ddd</label>
                         <input type="number" max="99" id="ddd" placeholder="ddd" required>
                     </div>
 
-                    <div class="telefone">
+                    <div class="telefone titulo-campo">
                         <label for="telefone">telefone</label>
                         <input type="text" id=" telefone" placeholder="Digite seu telefone" required>
                     </div>
                 </div>
 
-
                 <div class="area-endereco formatacao">
-                    <div class="endereco-numero">
-                        <div class="endereco">
+                    <div class="endereco-numero formatacao">
+                        <div class="endereco titulo-campo">
                             <label for="endereço">endereço</label>
                             <input type="text" id="endereco" placeholder="Digite seu endereço aqui" required>
                         </div>
 
-                        <div class="numero">
+                        <div class="numero titulo-campo">
                             <label for="numero">Numero</label>
                             <input type="number" id="numero" placeholder="000">
                         </div>
                     </div>
 
-                    <div class="cidade-cep">
-                        <div class="cidade">
+                    <div class="cidade-cep formatacao">
+                        <div class="cidade titulo-campo">
                             <label for="cidade">Cidade</label>
                             <input type="text" id="cidade" placeholder="cidade">
                         </div>
 
-                        <div class="cep">
-                            <label for="CEP">CEP</label>
+                        <div class="cep titulo-campo">
+                            <label for="cep">CEP</label>
                             <input type="number" id="cep" placeholder="00000-000">
                         </div>
                     </div>
                 </div>
 
                 <div class="area-dados formatacao">
-                    <div class="data-nascimento">
+                    <div class="data-nascimento titulo-campo">
                         <label for="data de nascimento">Data de nascimento</label>
                         <input type="date" id=" data-nascimento" required>
                     </div>
 
-                    <div class="genero">
+                    <div class="genero titulo-campo">
                         <label for="genero">Gênero</label>
                         <select id="genero" required>
                             <option value="#" disabled selected>Selecione seu genero</option>
@@ -100,15 +113,13 @@
                     </div>
                 </div>
                 
-                <div class="area-botão formatacao">
-                    <button type="submit" id="botão-cadasstrar">Cadastrar</button>
+                <div class="area-botão formatacao titulo-campo">
+                    <button type="submit" id="botão-cadastrar">Cadastrar</button>
                     <a href="#" class="link-login"> Já possui uma conta? Acesse agora</a>
                 </div>
 
             </form>
         </section>
     </main>
-
 </body>
-
 </html>

@@ -13,6 +13,9 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 20px;
 }
 
 .area-formularuio{
@@ -21,32 +24,25 @@
     width: 60vw;
 }
 
-.form-cadastro > div {
+.area-formularuio > div {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    width: 50vw;
-
+    gap: 50px;
 }
 
-.DDD input {
-    width: 4vw;
+div{
+    width: 100%;
+    display: flex;
 }
 
-.formatacao div{
+.area-endereco{
     display: flex;
     flex-direction: column;
-    flex:1;
-}
-
-#add, #numero{
-    width: 4vw;
+    gap: 1rem;
 }
 
 input, select {
-    width: 100% ;
-    padding: 7px;
-    margin: 8px;
+    padding: 7px 0;
+    margin-bottom: 8px;
 }
 
 .area-botão{
@@ -54,6 +50,7 @@ input, select {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
 }
 
 #botão-cadastrar{
@@ -64,7 +61,58 @@ input, select {
     font-size: 1.1rem;
 }
 
-.link-login{
-   margin-top: -25px;
+.titulo-campo{
+    display: flex;
+    flex-direction: column;
 }
 
+.formatacao{
+    gap: 1rem;
+}
+
+.form{
+    width: 50vw;
+}
+
+.ddd, .numero{
+    width: 100px;
+}
+
+@media (max-width:440px){
+    .area-cadastro{
+        width: 100vw;
+        background: none;
+        color: var(--back-color);
+    }
+
+    .form{
+        width:90vw;
+    }
+
+    .formatacao{
+        flex-direction: column;
+    }
+
+.area-contato, .endereco-numero, .cidade-cep{
+    flex-direction: row;
+}
+
+input,
+select{
+    border: 2px solid var(--cor-principal);    
+}
+
+.cep{
+    width: 30vw;
+}
+
+#botao_cadastrar{
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+
+.linl-login{
+    color: var(--cor-principal);
+}
+}
+     
