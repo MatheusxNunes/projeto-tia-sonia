@@ -6,7 +6,7 @@
 }
 
 .area-cadastro {
-    margin: 50px auto;
+    margin: 100px auto;
     width: 60vw;
     background-color: var(--back-color);
     display: flex;
@@ -112,7 +112,8 @@ select{
 }
 
 .linl-login{
-    color: var(--cor-principal);
+   color: var(--cor-principal);
 }
+
 }
      

@@ -223,6 +223,22 @@ footer {
    font-size: 0.9rem;
 }
 
+.rodape{
+   width: 100vw;
+   height: 10vh;
+   background-color: var(--cor-principal);
+   color: var(--cor-secundaria);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.nav-rodape{
+   margin: 10px;
+   font-size: 1.2rem;
+}
+
 @media (max-width: 430px) {
 
  .area-sobre {
