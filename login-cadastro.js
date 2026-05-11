@@ -1,9 +1,10 @@
-const FORM_CADASTRO = document.getElementById("form-cadastrar")
 
-if(FORM_CADASTRO) {
+const FORM_CADASTRAR = document.getElementById("form-cadastrar");
 
-    FORM_CADASTRO.addEventListener("submit", function(event){
-        event.preventDefault()
+// Só executa se estivermos na página que tem o form-cadastrar
+if (FORM_CADASTRAR) {
+    FORM_CADASTRAR.addEventListener("submit", function(event) {
+        event.preventDefault();
 
         const usuario = {
             nome: document.getElementById("nome").value,
@@ -15,41 +16,41 @@ if(FORM_CADASTRO) {
             endereco: document.getElementById("endereco").value,
             numero: document.getElementById("numero").value,
             cidade: document.getElementById("cidade").value,
-            CEP: document.getElementById("CEP").value,
-            dataNascimento: document.getElementById("dataNascimento").value,
+            cep: document.getElementById("cep").value,
+            dataNascimento: document.getElementById("data-nascimento").value,
             genero: document.getElementById("genero").selectedOptions[0].text
+        };
+
+        localStorage.setItem("usuarioCadastrado", JSON.stringify(usuario));
+        alert("Cadastro Realizado com Sucesso!");
+        window.location.href = "login.html"; // Vai para o login após cadastrar
+    });
+}
+
+// --- PARTE DO LOGIN ---
+const FORM_LOGAR = document.getElementById("form-logar");
+
+// Só executa se estivermos na página que tem o form-logar
+if (FORM_LOGAR) {
+    FORM_LOGAR.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const usuarioCadastrado = localStorage.getItem("usuarioCadastrado");
+
+        if (usuarioCadastrado) {
+            const usuarioLogin = JSON.parse(usuarioCadastrado);
+            
+            var emailDigitado = document.getElementById("email").value;
+            var senhaDigitada = document.getElementById("senha").value;
+
+            if (emailDigitado === usuarioLogin.email && senhaDigitada === usuarioLogin.senha) {
+                window.alert("Usuário Logado com sucesso!");
+                window.location.href = "index.html";
+            } else {
+                window.alert("Atenção: Usuário ou Senha Incorretos");
+            }
+        } else {
+            window.alert("Nenhum usuário cadastrado encontrado!");
         }
-
-        localStorage.setItem("usuarioCadastrado", JSON.stringify(usuario))
-        alert("Cadastro Realizado com SUCESSO!")
-        Window.location.href="login.html"
-    })
-
-    const FORM_CADASTRO = document.getElementById("form-logar")
-
-    if(FORM_LOGAR){
-
-        FORM_LOGAR.addEventListener("submit", function(event){
-
-            const usuarioCadastrado = localStorage.getItem("usuarioCadastrado")
-
-            if(usuarioCadastrado){
-                const usuarioEncontrado = JSON.parse(usuarioCadastrado)
-
-                var emailDigitado = document.getElementById("email").value
-                var semhaDigitada = document.getElementById("senha").value
-
-                if( emailDigitado == usuarioEncontrado.email && senhaDigitada == usuarioEncontrado.senha)
-                alert("Usuario logado com sucesso")
-                window.location.href = "index.html"
-                } else{
-                alert("ATENÇÃO: Email ou Senha Incorretos")
-            }
-                else{
-                alert("nenhum usuario cadastrado encontrado")
-            }
-        })
-
-    }
-
+    });
 }

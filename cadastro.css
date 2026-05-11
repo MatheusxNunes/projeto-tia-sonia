@@ -78,6 +78,10 @@ input, select {
     width: 100px;
 }
 
+.link-login{
+   color: black;
+}
+
 @media (max-width:440px){
     .area-cadastro{
         width: 100vw;
@@ -93,27 +97,26 @@ input, select {
         flex-direction: column;
     }
 
-.area-contato, .endereco-numero, .cidade-cep{
+    .area-contato, .endereco-numero, .cidade-cep{
     flex-direction: row;
-}
+    }
 
-input,
-select{
+    input,
+    select{
     border: 2px solid var(--cor-principal);    
-}
+    }
 
-.cep{
+    .cep{
     width: 30vw;
-}
+    }
 
-#botao_cadastrar{
+    #botao_cadastrar{
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
-}
+    }
 
-.linl-login{
-   color: var(--cor-principal);
-}
-
+    .link-login{
+    color:black;
+    }
 }
      
