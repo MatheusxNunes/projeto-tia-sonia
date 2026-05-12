@@ -2,7 +2,7 @@
 
 :root {
    --cor-principal: #257da7;
-   --cor-secundaria: #ffffff;
+   --cor-secundaria: #FFFF;
    --icone-background: #206897;
    --back-color: #8aa2e4;
    --largura-principal: 1600px;
@@ -13,6 +13,10 @@
    margin: 0;
    padding: 0;
    font-family: "Libre Baskerville", serif;
+}
+
+.acesso-negado{
+   background-color: red;
 }
 
 header {
@@ -48,6 +52,7 @@ nav ul li a {
 
 nav ul li a:hover {
    background-color: var(--roxo-background);
+   color: var(--cor-secundaria);
 }
 
 .icones {
@@ -97,7 +102,6 @@ main {
 #reserva__botão:hover {
    background-color: var(--back-color);
 }
-
 
 #reserva_titulo {
    margin-top: 20px;
@@ -211,9 +215,9 @@ main {
    scroll-margin-top: 110px;
 }
 
-   h3{
-      color: var(--cor-principal);
-   }
+h3{
+   color: var(--cor-principal);
+}
 
 footer {
    background-color: var(--cor-principal);

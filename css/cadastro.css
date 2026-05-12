@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+.corpo {
+    margin-top: 10vh;
+}
+
 .area-cadastro {
     margin: 100px auto;
     width: 60vw;
@@ -79,8 +83,9 @@ input, select {
 }
 
 .link-login{
-   color: black;
-}
+    color: black;
+    margin-top: 25px;
+} 
 
 @media (max-width:440px){
     .area-cadastro{
@@ -117,6 +122,7 @@ input, select {
 
     .link-login{
     color:black;
+    margin-top: 25px;
     }
 }
      
