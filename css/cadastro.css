@@ -87,6 +87,15 @@ input, select {
     margin-top: 25px;
 } 
 
+.erro-input{
+    border: 2px solid #ff4444 !important;
+    background-color: #ffe6e6;
+}
+
+.sucesso-input{
+    border: 2px solid #00cc66 !important;
+}
+
 @media (max-width:440px){
     .area-cadastro{
         width: 100vw;
