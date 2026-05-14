@@ -121,10 +121,10 @@ main {
    padding: 20px;
 }
 
-.sobre-foto {
+.sobre__foto {
    width: 500px;
    height: 500px;
-   border-radius: 20px;
+   border-radius: 45px;
 }
 
 .sobre-titulo {
