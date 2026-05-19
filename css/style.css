@@ -124,7 +124,7 @@ main {
 .sobre__foto {
    width: 500px;
    height: 500px;
-   border-radius: 45px;
+   border-radius: 25px;
 }
 
 .sobre-titulo {
@@ -156,7 +156,6 @@ main {
    border-radius: 20px;
    padding: 5px;
    display: flex;
-
 }
 
 .busca__campo {
@@ -335,7 +334,7 @@ footer {
    .sobre__foto{
       width: 300px;
       height: 300px;
-      border-radius: 100px;
+      border-radius: 60px;
       padding: 10px;
    }
 
@@ -365,6 +364,5 @@ footer {
    .bordados > a > img {
       width: 175px;
    }
-
    
 }
