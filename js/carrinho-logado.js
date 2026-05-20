@@ -4,10 +4,10 @@ const usuarioLogado = localStorage.getItem('usuarioCadastro')
 //se não estiver logado é direcionado a página de login
 
 if (!usuarioLogado) {
-    'document.innerHTML = '
+    document.innerHTML = 
     '<div class="container text-center mt-5" >' +
         '<h2 class="text-danger"><i class="fa-solid fa-lock"></i> Acesso negado</h2>' +
-        '<p class= "mb-4">Você precisa estar logado.</p>' +
+        '<p class="mb-4">Você precisa estar logado</p>' +
         '<p class="text-muted"> Aguarde...</p>' +
         '</div>'
 
@@ -20,28 +20,34 @@ if (!usuarioLogado) {
     const listaProdutoHTML = document.getElementById('lista-produtos')
     const textTotal = document.getElementById('texto-total')
     let valorTotal = 0
-    let textoPedidoEmail = 'Ola gostaria de fazer um pedido:/n/n'
+    let textoPedidoEmail = 'Olá, gostaria de fazer um pedido:\n\n'
 
     //Vamos  verificar se o carrinho esta vazio
-    if (carrinho.length === 0) {
+    if (carrinho.length === 0){
         listaProdutoHTML.innerHTML =
-            '<tr>'
+            '<tr>' +
+                '<td colpan="2" class="text-center">Seu carrinho está vazio.</td>'
+                '</tr>'
     } else {
-        carrinho, forEarch(function (item) {
+        //Cada item do carrinho é exibido na tabela
+        carrinho, forEarch(function(item) {
             listaProdutoHTML.innerHTML +=
             '<tr>'
                 '<td>' + item.nome + '</td>' +
                 '<td>' + item.preco + '</td>'
             '</tr>'
 
+            //  '<td> ${item.nome} </td>' +
+            //  '<td>R$ ${item.preco.toFixed(2)} </td>' + 
+
             //somar o valor total
             valorTotal + parseFloat(item.preco)
 
             //Colocando os itens no e-mail
-            textoPedidoEmail += '-' + ' : R$ ' + item.preco + '\n'
+            textoPedidoEmail += '-' + ':R$ ' + item.preco + '\n'
         })
 
         textTotal.innerText = 'Total: ' + valorTotal
-        textoPedidoEmail += '\nValor Total: R$ ' + valorTotal
+        textoPedidoEmail += '\nValor Total: R$' + valorTotal
     }
 }
