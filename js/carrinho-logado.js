@@ -34,20 +34,17 @@ if (!usuarioLogado) {
             listaProdutoHTML.innerHTML +=
             '<tr>'
                 '<td>' + item.nome + '</td>' +
-                '<td>' + item.preco + '</td>'
+                '<td> R$' + item.preco + '</td>'
             '</tr>'
-
-            //  '<td> ${item.nome} </td>' +
-            //  '<td>R$ ${item.preco.toFixed(2)} </td>' + 
 
             //somar o valor total
             valorTotal + parseFloat(item.preco)
 
             //Colocando os itens no e-mail
-            textoPedidoEmail += '-' + ':R$ ' + item.preco + '\n'
+            textoPedidoEmail += '-' + 'item.nome+ :R$ ' + item.preco + '\n'
         })
 
-        textTotal.innerText = 'Total: ' + valorTotal
+        textTotal.innerText = 'Total: R$' + valorTotal
         textoPedidoEmail += '\nValor Total: R$' + valorTotal
     }
 }
