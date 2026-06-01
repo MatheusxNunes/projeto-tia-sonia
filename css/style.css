@@ -50,11 +50,12 @@ nav ul li a {
    border: solid 2px var(--cor-secundaria);
    padding: 5px;
    border-radius: 0 20px;
+   color: rgb(195, 195, 224);
 }
 
 nav ul li a:hover {
-   background-color: var(--cor-principal);
-   color: var(--back-color);
+   background-color: rgba(86, 129, 194, 0.863);
+   color: rgb(49, 51, 77);
 }
 
 .icones {
